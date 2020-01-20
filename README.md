@@ -1,4 +1,4 @@
-# Monorepo com Yarn Workspace
+# Monorepo com Yarn Workspaces
 
 Criar as pastas do projeto
 
