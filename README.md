@@ -1,14 +1,25 @@
 # Monorepo com Yarn Workspaces
 
 Criar as pastas do projeto
+<<<<<<< HEAD
 ```
+=======
+
+>>>>>>> e4c942a1c7b52d85d679baf94c138eb7e0e1f15f
     mkdir NomeProjeto
     cd NomeProjero
     yarn init -y
     mkdir packages
+<<<<<<< HEAD
 ```
 
 Altere o package.json da raiz
+=======
+    
+
+Altere o package.json da raiz
+
+>>>>>>> e4c942a1c7b52d85d679baf94c138eb7e0e1f15f
 ```
 {
   "private": true,
@@ -31,7 +42,11 @@ Altere o package.json da raiz
 > Projetos
 
 ### Server (NodeJs - Express)
+<<<<<<< HEAD
 ```
+=======
+
+>>>>>>> e4c942a1c7b52d85d679baf94c138eb7e0e1f15f
     cd packages 
     mkdir server && cd server
     yarn init -y
@@ -39,10 +54,17 @@ Altere o package.json da raiz
     yarn add sucrase nodemon -D
     mkdir src && cd src
     touch index.js
+<<<<<<< HEAD
 ``` 
 
 Modelo do index.js
 ```
+=======
+    
+
+Modelo do index.js
+
+>>>>>>> e4c942a1c7b52d85d679baf94c138eb7e0e1f15f
     const express = require("express");
     const cors = require("cors");
     
@@ -56,14 +78,21 @@ Modelo do index.js
     });
     
     app.listen(3333);
+<<<<<<< HEAD
 ```
 
 Acrescentar ao packages/server/package.json
 ```
+=======
+
+Acrescentar ao packages/server/package.json
+
+>>>>>>> e4c942a1c7b52d85d679baf94c138eb7e0e1f15f
     "private": false,
     "scripts": {
         "start": "nodemon src/index.js"
       },
+<<<<<<< HEAD
 ```
 
 ### Web (ReactJs)
@@ -107,6 +136,30 @@ Crie o arquivo packages/mobile/metro.config.js
 
 No arquivo packages/mobile/package.json
 ```
+=======
+
+### Web (ReactJs)
+
+    cd packages
+    create-react-app web
+
+Exclua a pasta .git
+
+### Mobile (Expo)
+
+    cd packages
+    expo init mobile
+    yarn add expo-yarn-workspaces -D
+
+Crie o arquivo packages/mobile/metro.config.js
+
+    const { createMetroConfiguration } = require('expo-yarn-workspaces');
+    
+    module.exports = createMetroConfiguration(__dirname);
+
+No arquivo packages/mobile/package.json
+
+>>>>>>> e4c942a1c7b52d85d679baf94c138eb7e0e1f15f
     "name": "mobile",
     "version": "0.1.0",
     "main": "__generated__/AppEntry.js",
@@ -121,4 +174,7 @@ No arquivo packages/mobile/package.json
         "eject": "expo eject",
         "postinstall": "expo-yarn-workspaces postinstall"
       },
+<<<<<<< HEAD
 ```
+=======
+>>>>>>> e4c942a1c7b52d85d679baf94c138eb7e0e1f15f
